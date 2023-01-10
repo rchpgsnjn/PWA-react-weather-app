@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 import { fetchWeather } from "./api/infoWeather";
+import { stagesTesting } from "./api/stagesTesting";
 import './App.css';
 
 const App = () => {
@@ -13,8 +14,10 @@ const App = () => {
             const data = await fetchWeather(query);
             setWeather(data);
             setQuery('');
+            stagesTesting();
         } 
     }
+    
     return(
         <div className="main-container">
             <input
