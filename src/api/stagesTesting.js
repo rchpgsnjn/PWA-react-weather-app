@@ -4,7 +4,7 @@ import axios from 'axios';
 export const stagesTesting = () => {
     const config = {
         method: 'get',
-        url: 'http://127.0.0.1:8002/api/stages/',
+        url: 'http://app.deepdata.loc:8002/api/stages/',
         headers: { 
           //Change token value in .env file
           'Authorization': `Bearer ${process.env.REACT_APP_BEARER_TOKEN}`
