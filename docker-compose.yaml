@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  dd-pwa:
+    image: pwa-react-weather-app
+    ports:
+      - 3000:3000
+    
