@@ -1,1 +1,1 @@
-docker build . -t pwa-react-weather-app && docker run -p 3000:3000 -d pwa-react-weather-app
+docker build . -t pwa-react-weather-app && docker run -p 3000:3000 -d pwa-react-weather-app --name dd-pwa
